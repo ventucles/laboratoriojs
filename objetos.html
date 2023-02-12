@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+ const infoPersonal={
+    nombre:"Daniel",
+    apellido:"Ventura",
+    edad:15,
+    fechaNac:"31/12/193",
+    hobbies:["Ir a la playa","Cine","Leer","Investigar"],
+    programacionAcademica:{
+        asignatura:["Programacion Web","Diseño Web","Base de Datos","Inteligencia de Negocios"],
+        saludo:alert("Buenos dias Estudiantes")
+    }
+ };
+
+ const{nombre,apellido,edad}=infoPersonal;
+ const{asignatura,saludo}=infoPersonal.programacionAcademica;
+
+// COMPUESTA
+if(edad>17){
+    document.write(`Soy Mayor de Edad y tengo ${edad}<br/>`);
+}
+else{
+    document.write(`Soy menor de edad y tengo ${edad}<br/>`);
+}
+
+
+document.write(`Mi Nombre es ${nombre}</br> `);
+document.write(`Mi Apellido es ${apellido}<br/>`);
+document.write(`Mi Edad es ${edad}<br/>`);
+document.write(`Mis Materias es ${asignatura} <br/>`);
+
+
+</script>
+
+</body>
+</html>
